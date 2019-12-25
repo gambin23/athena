@@ -1,0 +1,15 @@
+.list-group {
+}
+
+.list-group-item {
+	border: none;
+	border-bottom: 1px solid $gray-400;
+	border-radius: 0!important;
+
+	&:first-child {
+		border-radius: 0!important;
+	}
+	&:last-child {
+		border-radius: 0!important;
+	}
+}

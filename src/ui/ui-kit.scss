@@ -1,6 +1,18 @@
-@import'~bootstrap/dist/css/bootstrap.css';
-@import './menu';
+@import './_variables';
+@import 'bootstrap';
+@import './utilities';
+@import './_typography';
+@import './_menu';
+@import './_card';
+@import './_list';
+@import './_mark';
+@import './_avatar';
 
 body {
-  overflow-x: hidden;
+	overflow-x: hidden;
+	background-color: $gray-100;
+}
+
+a {
+	text-decoration: none !important;
 }

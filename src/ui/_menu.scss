@@ -13,15 +13,30 @@
 }
 
 .menu {
-	border-right: 2px solid lightgray;
+	display: flex;
+	flex-direction: column;
+	min-width: 15rem;
+	border-right: 2px solid darken($primary, 1);
+	background-color: $secondary;
 
-	& .heading {
+	& .header {
 		padding: 0.875rem 1.25rem;
 		font-size: 1.2rem;
+		background-color: $primary;
 	}
 
 	& .list-group {
 		width: 15rem;
+	}
+}
+
+.menu-item {
+	padding: 1rem;
+	color: $primary;
+
+	&.active{ 
+		color: $secondary;
+		background-color: $primary;
 	}
 }
 

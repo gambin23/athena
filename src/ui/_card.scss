@@ -1,0 +1,14 @@
+.card {
+	border: none;
+	border-radius: 0;
+}
+
+.card-header {
+	font-weight: 600;
+	background-color: $primary;
+	padding: 20px;
+	&:first-child {
+		border: none;
+		border-radius: 0;
+	}
+}

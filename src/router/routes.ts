@@ -1,17 +1,24 @@
-export const routes = [
+import { RouteConfig } from 'vue-router';
+
+export const routes: RouteConfig[] = [
 	{
 		path: '/login',
-		name: 'login',
-		component: () => import('../pages/login.vue')
+		name: 'Login',
+		component: () => import('@/pages/login.vue')
 	},
 	{
 		path: '/home',
-		name: 'home',
-		component: () => import('../pages/home.vue')
+		name: 'Home',
+		component: () => import('@/pages/home.vue')
 	},
 	{
 		path: '/about',
-		name: 'about',
-		component: () => import('../pages/about.vue')
+		name: 'About',
+		component: () => import('@/pages/about.vue')
+	},
+	{
+		path: '/transactions/new',
+		name: 'Transactions',
+		component: () => import('@/pages/transaction-new.vue')
 	}
 ];
