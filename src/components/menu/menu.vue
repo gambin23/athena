@@ -22,7 +22,7 @@ export default class Menu extends Vue {
 			<router-link :to="'/login'" :active-class="'active'" class="menu-item">Logout</router-link>
 		</div>
 		<div class="content">
-			<nav class="navbar navbar-light bg-primary mb-3">
+			<nav class="navbar mb-3">
 				<button @click="toggleMenu()" class="btn btn-default">
 					<i class="fa fa-bars"></i>
 				</button>

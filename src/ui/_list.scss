@@ -3,13 +3,23 @@
 
 .list-group-item {
 	border: none;
-	border-bottom: 1px solid $gray-400;
-	border-radius: 0!important;
+	border-bottom: 1px solid $secondary;
+	border-radius: 0 !important;
+	background-color: inherit;
 
 	&:first-child {
-		border-radius: 0!important;
+		border-radius: 0 !important;
 	}
+
 	&:last-child {
-		border-radius: 0!important;
+		border-radius: 0 !important;
+	}
+
+	&:hover {
+		color: $secondary !important;
+		background-color: $highlight;
+		& span {
+			color: $secondary !important;
+		}
 	}
 }

@@ -7,10 +7,10 @@ import {
 	TransactionType,
 	TransactionCategory,
 	data
-} from './recent-transactions';
+} from './transactions';
 
 @Component
-export default class RecentTransactions extends Vue {
+export default class TransactionsRecent extends Vue {
 	transactions: RecentTransaction[] = data;
 	category = TransactionCategory;
 	type = TransactionType;
@@ -20,7 +20,10 @@ export default class RecentTransactions extends Vue {
 <template>
 	<div class="card">
 		<div class="card-header">
-			Recent Transactions
+			Transactions
+			<div class="card-options">
+				<i class="fa fa-expand"></i>
+			</div>
 		</div>
 		<ul class="list-group">
 			<li v-for="(transaction, i) in transactions" :key="i" class="list-group-item d-flex" :class="transaction.type === type.Income ? 'mark-green' : 'mark-red'">

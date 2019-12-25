@@ -2,10 +2,10 @@
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	background-color: $gray-200;
+	background-color: $secondary;
 	display: inline-block;
 	text-align: center;
-	font-size: 30px;
+	font-size: calc(50px * 0.6);
 	font-weight: bold;
 }
 
@@ -13,16 +13,18 @@
 	@extend .avatar;
 	width: 25px;
 	height: 25px;
+	font-size: calc(25px * 0.6);
 }
 
 .avatar-lg {
 	@extend .avatar;
 	width: 100px;
 	height: 100px;
+	font-size: calc(100px * 0.6);
 }
 
 .avatar-xl {
 	@extend .avatar;
 	width: 250px;
 	height: 250px;
-}
+	font-size: calc(250px * 0.6);}

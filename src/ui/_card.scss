@@ -1,14 +1,27 @@
 .card {
 	border: none;
 	border-radius: 0;
+	box-shadow: 0 5px 5px 0 rgba($secondary, 0.7);
+	background-color: rgba($secondary, 0.7);
 }
 
 .card-header {
+	display: flex;
 	font-weight: 600;
-	background-color: $primary;
+	background-color: rgba($secondary, 0.5);
 	padding: 20px;
 	&:first-child {
 		border: none;
 		border-radius: 0;
+	}
+	& .card-options {
+		display: block;
+		margin-left: auto;
+	}
+
+	& > * {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
 	}
 }

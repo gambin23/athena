@@ -1,8 +1,8 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import RecentTransactions from '@/components/recent-transactions/recent-transactions.vue';
+import TransactionsRecent from '@/components/transactions/transactions-recent.vue';
 
-@Component({ components: { RecentTransactions } })
+@Component({ components: { TransactionsRecent } })
 export default class Home extends Vue {
 	user = 'Gilbert';
 }
@@ -11,10 +11,10 @@ export default class Home extends Vue {
 <template>
 	<div class="row">
 		<div class="col-lg-4">
-			<RecentTransactions />
+			<TransactionsRecent />
 		</div>
 		<div class="col-lg-4">
-			<div>Unassigned Transactions</div>
+			<div>Review</div>
 		</div>
 		<div class="col-lg-4">
 			<div>Lifetime Balance</div>

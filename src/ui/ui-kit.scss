@@ -7,12 +7,20 @@
 @import './_list';
 @import './_mark';
 @import './_avatar';
+@import './_navbar';
 
 body {
 	overflow-x: hidden;
-	background-color: $gray-100;
+	color: $primary;
+	background: -moz-linear-gradient(150deg, #ffef57 0%, #f6ac91 20%, #3c3c46 100%);
+	background: -webkit-linear-gradient(150deg, #ffef57 0%, #f6ac91 20%, #3c3c46 100%);
+	background: linear-gradient(150deg, #ffef57 0%, #f6ac91 20%, #3c3c46 100%);
 }
 
 a {
 	text-decoration: none !important;
+}
+
+.fa {
+	color: $primary;
 }
