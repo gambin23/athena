@@ -14,7 +14,7 @@ export default class Menu extends Vue {
 <template>
 	<div class="menu-wrapper" :class="{'show': show}">
 		<div class="menu">
-			<div class="header">Athena</div>
+			<div class="header"><img src="@/assets/logo.svg" width="100px" alt="logo"></div>
 			<router-link :to="'/home'" :active-class="'active'" class="menu-item">Home</router-link>
 			<router-link :to="'/transactions/new'" :active-class="'active'" class="menu-item">New Transaction</router-link>
 			<router-link :to="'/about'" :active-class="'active'" class="menu-item">About</router-link>

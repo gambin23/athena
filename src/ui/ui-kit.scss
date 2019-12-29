@@ -8,13 +8,18 @@
 @import './_mark';
 @import './_avatar';
 @import './_navbar';
+@import './_box';
+@import './_progress';
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:500,700&display=swap');
 
 body {
 	overflow-x: hidden;
 	color: $primary;
-	background: -moz-linear-gradient(150deg, #ffef57 0%, #f6ac91 20%, #3c3c46 100%);
-	background: -webkit-linear-gradient(150deg, #ffef57 0%, #f6ac91 20%, #3c3c46 100%);
-	background: linear-gradient(150deg, #ffef57 0%, #f6ac91 20%, #3c3c46 100%);
+	font-family: 'Comfortaa', cursive;
+	background: #536976; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #536976, #292e49);
+	background: -moz-linear-gradient(to right, #536976, #292e49);
+	background: linear-gradient(to right, #536976, #292e49);
 }
 
 a {
@@ -23,4 +28,8 @@ a {
 
 .fa {
 	color: $primary;
+}
+
+.row {
+	margin-bottom: 20px;
 }

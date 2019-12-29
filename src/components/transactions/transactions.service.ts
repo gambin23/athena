@@ -1,43 +1,9 @@
-export interface RecentTransaction {
-	id: string;
-	status: TransactionStatus;
-	type: TransactionType;
-	category: TransactionCategory;
-	subCategory: string;
-	value: number;
-	description: string;
-	entity: string;
-	date: Date;
-	ref?: string;
-}
+import { Transaction } from '@/models/transaction';
+import { TransactionStatus } from '@/models/transactions-status';
+import { TransactionType } from '@/models/transaction-type';
+import { TransactionCategory } from '@/models/transaction-category';
 
-export enum TransactionStatus {
-	Unassigned,
-	Assigned,
-	Deleted
-}
-
-export enum TransactionType {
-	Income,
-	Expense
-}
-
-export enum TransactionCategory {
-	Salary,
-	Loan,
-	Shopping,
-	Vehicle,
-	School,
-	Transport,
-	Music,
-	Sports,
-	Computer,
-	Gambling,
-	Travelling,
-	Government
-}
-
-export const data: RecentTransaction[] = [
+export const data: Transaction[] = [
 	{
 		id: '1',
 		status: TransactionStatus.Assigned,

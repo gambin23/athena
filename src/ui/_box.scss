@@ -1,0 +1,30 @@
+.box {
+	padding: 20px;
+	background-color: rgba($secondary, 0.9);
+	box-shadow: 0 5px 5px 0 rgba($secondary, 0.25);
+}
+
+.box-highlight {
+	@extend .box;
+	color: $secondary;
+	background-color: rgba($highlight, 0.9);
+	& .caption {
+		color: rgba($secondary, 0.6);
+	}
+}
+
+.box-red {
+	@extend .box;
+	background-color: rgba($red, 0.6);
+	& .caption {
+		color: rgba($white, 0.8);
+	}
+}
+
+.box-green {
+	@extend .box;
+	background-color: rgba($green, 0.6);
+	& .caption {
+		color: rgba($white, 0.8);
+	}
+}

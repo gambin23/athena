@@ -1,0 +1,18 @@
+.progress {
+	height: 10px;
+	background-color: rgba($primary, 0.25);
+}
+
+.progress-bar {
+	background-color: rgba($primary, 0.5);
+}
+
+.progress-alt {
+	@extend .progress;
+	background-color: rgba($secondary, 0.25);
+}
+
+.progress-bar-alt {
+	@extend .progress-bar;
+	background-color: rgba($secondary, 0.5);
+}
